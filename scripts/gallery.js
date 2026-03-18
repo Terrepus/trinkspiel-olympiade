@@ -17,8 +17,11 @@ async function loadgallery(olympiade){
     }
     var count = 0;
 
-    document.getElementById("title").innerHTML = "Trinkspiel-Olympiade " + olympiade
+    document.getElementById("title").innerHTML = "trinkspiel-olympiade " + olympiade
     switch(olympiade){
+        case 8:
+            n=33
+            break
         case 7:
             n=47
             break
@@ -29,7 +32,7 @@ async function loadgallery(olympiade){
             n=0
             break
         case 4:
-            n=24
+            n=22
             break
         case 3:
             n=29
@@ -104,6 +107,9 @@ async function loadmoregallery(olympiade){
 
     document.getElementById("title").innerHTML = "Trinkspiel-Olympiade " + olympiade
     switch(olympiade){
+        case 8:
+            n=63
+            break
         case 7:
             n=77
             break
@@ -114,7 +120,7 @@ async function loadmoregallery(olympiade){
             n=0
             break
         case 4:
-            n=24
+            n=22
             break
         case 3:
             n=29
@@ -157,4 +163,4 @@ async function loadmoregallery(olympiade){
 }
 
  
-loadgallery(7)
+loadgallery(8)
