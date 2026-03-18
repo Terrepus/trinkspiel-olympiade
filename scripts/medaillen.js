@@ -75,7 +75,7 @@ function displayTable(data,discipline){
         pic.src = "images/profilbilder/" + player_name +".png"
 
         
-        if(player_name == "anna" || player_name == "jochen" || player_name == "lina"){
+        if(player_name == "anna" || player_name == "jochen" || player_name == "lina" || player_name == "luisa" || player_name == "tim"){
             pic.src="images/profilbilder/default.png"
             
         }

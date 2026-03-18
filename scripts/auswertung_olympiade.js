@@ -59,10 +59,10 @@ function displayTable(data,olympiade){
         pic1.src = "images/profilbilder/" + player1_name +".png"
         pic2.src = "images/profilbilder/" + player2_name +".png"
         
-        if(player1_name == "anna" || player1_name == "jochen" || player1_name == "lina" ){
+        if(player1_name == "anna" || player1_name == "jochen" || player1_name == "lina" || player1_name == "luisa" || player1_name == "tim"){
             pic1.src="images/profilbilder/default.png"
         }
-        if(player2_name == "anna" || player2_name == "jochen" || player2_name == "lina" ){
+        if(player2_name == "anna" || player2_name == "jochen" || player2_name == "lina" || player2_name == "luisa" || player2_name == "tim"){
             pic2.src="images/profilbilder/default.png"
         }
         if (olympiade == 2 && i == 5){
@@ -125,7 +125,7 @@ function displayTable(data,olympiade){
 function loadTable(olympiade){
     fetchAndProcessExcelFile("./auswertungen/olympiaden.xlsx",olympiade)
 }
-loadTable(7)
+loadTable(8)
 
 function sortTable(sort){
     const table = document.getElementById("auswertungen_table")
